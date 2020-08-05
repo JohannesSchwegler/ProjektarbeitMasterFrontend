@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Home from 'pages/index';
 import About from 'pages/about';
+import Dashboard from "pages/dashboard"
 import NotFound from 'pages/404';
 import AppLayout from 'components/app-layout/AppLayout';
 
@@ -17,6 +18,7 @@ const App = () => (
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/dashboard" component={Dashboard} />
             <Route component={NotFound} />
           </Switch>
         </AppLayout>
