@@ -1,13 +1,13 @@
 import React, { ReactNode } from 'react';
 import { Helmet } from 'react-helmet';
 
-import Logo from 'assets/svg/ueno-logo.svg';
-import Dribbble from 'assets/svg/dribbble.svg';
-import Twitter from 'assets/svg/twitter.svg';
-import Github from 'assets/svg/github.svg';
-import Instagram from 'assets/svg/instagram.svg';
-import Facebook from 'assets/svg/facebook.svg';
-import Linkedin from 'assets/svg/linkedin.svg';
+import { ReactComponent as Logo } from 'assets/svg/ueno-logo.svg';
+import { ReactComponent as Dribbble } from 'assets/svg/dribbble.svg';
+import { ReactComponent as Twitter } from 'assets/svg/twitter.svg';
+import { ReactComponent as Github } from 'assets/svg/github.svg';
+import { ReactComponent as Instagram } from 'assets/svg/instagram.svg';
+import { ReactComponent as Facebook } from 'assets/svg/facebook.svg';
+import { ReactComponent as Linkedin } from 'assets/svg/linkedin.svg';
 
 import { helmet } from 'utils/helmet';
 import { Header } from 'components/header/Header';
