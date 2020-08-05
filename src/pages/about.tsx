@@ -1,13 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import Dashboard from "../components/dashboard/Dashboard"
 
-import { Intro } from 'components/intro/Intro';
+import SidebarAbout from "../pageComponents/about/SidebarAbout"
 
 // tslint:disable no-default-export
 export default () => (
   <>
     <Helmet title="About" />
 
-    <Intro>About page</Intro>
+    <Dashboard sidebar={<SidebarAbout/>} content={"Wird aufgefüllt"} />
   </>
 );

@@ -1,20 +1,21 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import s from "./Dashboard.scss"
 import Sidebar from "../sidebar/Sidebar"
-import Content from "./ContentArea"
+import ContentArea from "./ContentArea"
 
-export default function Dashboard() {
+interface DashboardProps {
+    sidebar: ReactNode
+    content: ReactNode
+}
+export default function Dashboard({ sidebar, content }: DashboardProps) {
     return (
         <div className={s.dashboard}>
             <Sidebar>
-
-
+                {sidebar}
             </Sidebar>
-            <Content>
-
-
-            </Content>
-
+            <ContentArea>
+                {content}
+            </ContentArea>
 
 
         </div>

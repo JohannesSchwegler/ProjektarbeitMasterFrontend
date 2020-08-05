@@ -1,5 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet';
+import SidebarNav from "../components/dashboard/SidebarNav"
 
 import Dashboard from "../components/dashboard/Dashboard"
 
@@ -9,7 +10,6 @@ import Dashboard from "../components/dashboard/Dashboard"
 export default () => (
     <>
         <Helmet title="Dashboard" />
-        <Dashboard />
-
+        <Dashboard sidebar={<SidebarNav/>} content={"f"} />
     </>
 );
